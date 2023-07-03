@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Fitness Hub</title>
+  </head>
+
+  <body>
+    <header
+      class="text-white bg-gradient-to-r from-red-500 via-pink-500 to-purple-500 body-font"
+    >
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <a
+          href="#"
+          id="fitness-hub-link"
+          class="flex title-font font-medium items-center mb-4 md:mb-0"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-10 h-10 p-2 bg-white rounded-full text-red-500"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+            ></path>
+          </svg>
+          <span class="ml-3 text-2xl font-bold">Fitness Hub</span>
+        </a>
+
+        <nav
+          class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a href="javascript:location.reload()" class="mr-5 hover:text-white"
+            >Home</a
+          >
+          <a href="#services" class="mr-5 hover:text-white">Services</a>
+          <a href="#our-team" class="mr-5 hover:text-white">Our Team</a>
+          <a href="#contact" class="mr-5 hover:text-white">Contact</a>
+        </nav>
+
+        <button
+          onclick="scrollToSection('price')"
+          class="inline-flex items-center bg-purple-700 hover:bg-purple-800 border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0 font-bold"
+        >
+          Join Now
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero  -->
+    <section
+      class="text-white bg-gradient-to-r from-red-500 via-pink-500 to-purple-500 body-font"
+    >
+      <div
+        class="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center"
+      >
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+        >
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium">
+            Transform your body <br class="hidden lg:inline-block" />with
+            Fitness Hub
+          </h1>
+          <p class="mb-8 leading-relaxed">
+            Get fit and stay healthy with our state-of-the-art facilities and
+            expert trainers. We offer a wide range of classes and personalized
+            training programs to help you achieve your fitness goals.
+          </p>
+          <div class="flex justify-center">
+            <button
+              class="inline-flex text-white bg-purple-700 hover:bg-purple-800 border-0 py-2 px-6 focus:outline-none rounded text-lg"
+            >
+              Learn More
+            </button>
+            <button
+              class="ml-4 inline-flex text-white bg-purple-700 border-0 py-2 px-6 focus:outline-none hover:bg-purple-800 hover:text-white rounded text-lg"
+              onclick="scrollToFeedbackSection()"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+        <div
+          class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
+          style="margin-top: -10px"
+        >
+          <img
+            class="object-cover object-center rounded"
+            alt="hero"
+            src="https://source.unsplash.com/720x600/?gym&client_id=Lhbn_UORgQ9GlN6cjj6c1VJofkJjLRmilW_NNzuh5yY"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section
+      id="services"
+      class="text-white bg-gradient-to-r from-red-500 via-pink-500 to-purple-500 body-font py-10"
+    >
+      <div class="container px-5 mx-auto">
+        <div class="flex flex-wrap w-full mb-10">
+          <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+            <h1
+              class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white"
+            >
+              Our Services
+            </h1>
+          </div>
+          <p class="lg:w-1/2 w-full leading-relaxed text-white">
+            Stay fit and healthy with our wide range of gym services tailored to
+            your needs.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="Image"
+                class="w-720 h-400"
+                alt="Personal Training"
+              />
+              <h3
+                class="tracking-widest text-white text-xs font-medium title-font"
+              >
+                Personal Training
+              </h3>
+              <h2 class="text-lg text-white font-medium title-font mb-4">
+                Get One-on-One Guidance
+              </h2>
+              <p class="leading-relaxed text-base">
+                Achieve your fitness goals faster with personalized training
+                sessions and expert guidance.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://images.unsplash.com/photo-1687393629507-a594caa64c1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+                alt="Image"
+                class="w-720 h-400"
+                alt="Group Fitness Classes"
+              />
+              <h3
+                class="tracking-widest text-white text-xs font-medium title-font"
+              >
+                Group Fitness Classes
+              </h3>
+              <h2 class="text-lg text-white font-medium title-font mb-4">
+                Join a Community
+              </h2>
+              <p class="leading-relaxed text-base">
+                Experience the energy and motivation of group workouts with our
+                diverse fitness classes.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="Image"
+                class="w-720 h-400"
+                alt="Weightlifting and Strength"
+              />
+              <h3
+                class="tracking-widest text-white text-xs font-medium title-font"
+              >
+                Weightlifting and Strength
+              </h3>
+              <h2 class="text-lg text-white font-medium title-font mb-4">
+                Build Muscle and Power
+              </h2>
+              <p class="leading-relaxed text-base">
+                Build strength, muscle mass, and power with our weightlifting
+                programs.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/4 md:w-1/2 p-4">
+            <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
+              <img
+                class="h-40 rounded w-full object-cover object-center mb-6"
+                src="https://images.unsplash.com/photo-1535743686920-55e4145369b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
+                alt="Image"
+                class="w-720 h-400"
+                alt="Cardiovascular Exercise"
+              />
+              <h3
+                class="tracking-widest text-white text-xs font-medium title-font"
+              >
+                Cardiovascular Exercise
+              </h3>
+              <h2 class="text-lg text-white font-medium title-font mb-4">
+                Boost Your Heart Health
+              </h2>
+              <p class="leading-relaxed text-base">
+                Improve cardiovascular endurance with our cardio exercises.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Team -->
+
+    <section
+      id="our-team"
+      class="text-white bg-gradient-to-r from-red-500 via-pink-500 to-purple-500 body-font"
+    >
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class="text-2xl font-medium title-font mb-4 text-white">
+            OUR TEAM
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-white">
+            Meet our dedicated team of fitness enthusiasts and wellness experts,
+            ready to guide and support you on your fitness journey. Unlock your
+            potential with tailored training and expert advice today.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 lg:w-1/4 md:w-1/2">
+            <div class="h-full flex flex-col items-center text-center">
+              <img
+                alt="team"
+                class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+                alt="Image"
+                class="w-200 h-200"
+              />
+
+              <div class="w-full">
+                <h2 class="title-font font-medium text-lg text-white">
+                  John Smith
+                </h2>
+                <h3 class="text-white mb-3">Personal Trainer</h3>
+
+                <p class="mb-4">
+                  John is a dedicated personal trainer with over 10 years of
+                  experience. He specializes in weightlifting, helping his
+                  clients achieve their fitness goals.
+                </p>
+                <span class="inline-flex">
+                  <a class="text-gray-700">
+                    <!-- Twitter Icon -->
+                  </a>
+                  <a class="ml-2 text-gray-700">
+                    <!-- Instagram Icon -->
+                  </a>
+                  <a class="ml-2 text-gray-700">
+                    <!-- Facebook Icon -->
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/4 md:w-1/2">
+            <div class="h-full flex flex-col items-center text-center">
+              <img
+                alt="team"
+                class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                src="https://images.unsplash.com/photo-1554344728-77cf90d9ed26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+                alt="Image"
+                class="w-200 h-200"
+              />
+              <div class="w-full">
+                <h2 class="title-font font-medium text-lg text-white">
+                  David Johnson
+                </h2>
+                <h3 class="text-white mb-3">Fitness Instructor</h3>
+                <p class="mb-4">
+                  David is a highly energetic fitness instructor who loves to
+                  motivate and challenge his clients to reach new levels of
+                  fitness.
+                </p>
+                <span class="inline-flex">
+                  <a class="text-gray-700">
+                    <!-- Twitter Icon -->
+                  </a>
+                  <a class="ml-2 text-gray-700">
+                    <!-- Instagram Icon -->
+                  </a>
+                  <a class="ml-2 text-gray-700">
+                    <!-- Facebook Icon -->
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/4 md:w-1/2">
+            <div class="h-full flex flex-col items-center text-center">
+              <img
+                alt="team"
+                class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                src="https://images.unsplash.com/photo-1584380931214-dbb5b72e7fd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=898&q=80"
+                alt="Image"
+                class="w-200 h-200"
+              />
+              <div class="w-full">
+                <h2 class="title-font font-medium text-lg text-white">
+                  Emily Davis
+                </h2>
+                <h3 class="text-white mb-3">Yoga Instructor</h3>
+
+                <p class="mb-4">
+                  Emily is a certified yoga instructor with a passion for
+                  helping people find balance and peace through yoga practice.
+                </p>
+                <span class="inline-flex">
+                  <a class="text-gray-700">
+                    <!-- Twitter Icon -->
+                  </a>
+                  <a class="ml-2 text-gray-700">
+                    <!-- Instagram Icon -->
+                  </a>
+                  <a class="ml-2 text-gray-700">
+                    <!-- Facebook Icon -->
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 lg:w-1/4 md:w-1/2">
+            <div class="h-full flex flex-col items-center text-center">
+              <img
+                alt="team"
+                class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                src="https://images.unsplash.com/photo-1574680088814-c9e8a10d8a4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80"
+                alt="Image"
+                class="w-200 h-200"
+              />
+              <div class="w-full">
+                <h2 class="title-font font-medium text-lg text-white">
+                  Sarah Thompson
+                </h2>
+                <h3 class="text-white mb-3">Nutritionist</h3>
+                <p class="mb-4">
+                  Sarah is a registered nutritionist with expertise in creating
+                  personalized nutrition plans to help clients achieve their
+                  health and wellness goals.
+                </p>
+                <span class="inline-flex">
+                  <a class="text-gray-700">
+                    <!-- Twitter Icon -->
+                  </a>
+                  <a class="ml-2 text-gray-700">
+                    <!-- Instagram Icon -->
+                  </a>
+                  <a class="ml-2 text-gray-700">
+                    <!-- Facebook Icon -->
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="text-white bg-gradient-to-r from-red-500 via-pink-500 to-purple-500 body-font"
+    >
+      <div class="container px-5 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class="text-2xl font-medium title-font mb-4 text-white">
+            Testimonials
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-white">
+            Read what our clients have to say about their experience at our gym.
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+            <div class="h-full text-center">
+              <img
+                alt="testimonial"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10"
+                src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1321&q=80"
+                alt="Image"
+                class="w-300 h-300"
+              />
+              <p class="leading-relaxed">
+                I love this gym! The trainers are amazing, and the facilities
+                are top-notch. It's the perfect place to achieve my fitness
+                goals.
+              </p>
+              <span
+                class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"
+              ></span>
+              <h2
+                class="text-white font-medium title-font tracking-wider text-sm"
+              >
+                John Doe
+              </h2>
+              <h3 class="text-white mb-3">Fitness Enthusiast</h3>
+            </div>
+          </div>
+          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+            <div class="h-full text-center">
+              <img
+                alt="testimonial"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10"
+                src="https://images.unsplash.com/photo-1557555187-23d685287bc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+                alt="Image"
+                class="w-300 h-300"
+              />
+              <p class="leading-relaxed">
+                I've been a member of this gym for over a year now, and I'm
+                extremely satisfied with the results. The trainers are
+                knowledgeable, and the atmosphere is motivating.
+              </p>
+              <span
+                class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"
+              ></span>
+              <h2
+                class="text-white font-medium title-font tracking-wider text-sm"
+              >
+                Jane Smith
+              </h2>
+              <h3 class="text-white mb-3">Fitness Enthusiast</h3>
+            </div>
+          </div>
+          <div class="lg:w-1/3 lg:mb-0 p-4">
+            <div class="h-full text-center">
+              <img
+                alt="testimonial"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10"
+                src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80"
+                alt="Image"
+                class="w-300 h-300"
+                alt="Image"
+                class="w-300 h-300"
+              />
+              <p class="leading-relaxed">
+                Joining this gym was the best decision I ever made. The staff is
+                friendly, and the variety of classes keeps me motivated. I've
+                seen incredible progress in my fitness journey.
+              </p>
+              <span
+                class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"
+              ></span>
+              <h2
+                class="text-white font-medium title-font tracking-wider text-sm"
+              >
+                Mike Johnson
+              </h2>
+              <h3 class="text-white mb-3">Fitness Enthusiast</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+
+    <section
+      id="price"
+      class="text-white bg-gradient-to-r from-red-500 via-pink-500 to-purple-500 body-font"
+    >
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2">
+            Pricing
+          </h1>
+          <p class="mb-8 leading-relaxed">
+            Choose a membership plan that suits your fitness goals.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap -m-4 justify-center">
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden"
+            >
+              <h2
+                class="text-sm tracking-widest text-purple-700 title-font mb-1 font-medium"
+              >
+                STARTER
+              </h2>
+
+              <h1
+                class="text-5xl text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-800"
+              >
+                <span>$10</span>
+                <span class="text-lg ml-1 font-normal">/month</span>
+              </h1>
+              <p class="flex items-center text-white mb-2">
+                <span
+                  class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-white rounded-full flex-shrink-0"
+                >
+                  <svg
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2.5"
+                    class="w-3 h-3 text-white"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 13l4 4L19 7"></path>
+                  </svg> </span
+                >Access to basic gym facilities
+              </p>
+
+              <p class="flex items-center text-white mb-2">
+                <span
+                  class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-white rounded-full flex-shrink-0"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2.5"
+                    class="w-3 h-3"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M6 18L18 6M6 6l12 12"></path>
+                  </svg> </span
+                >Personal training not included
+              </p>
+
+              <p class="flex items-center text-white mb-2">
+                <span
+                  class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-white rounded-full flex-shrink-0"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2.5"
+                    class="w-3 h-3"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M6 18L18 6M6 6l12 12"></path>
+                  </svg> </span
+                >No access to group classes
+              </p>
+
+              <p class="flex items-center text-white mb-2">
+                <span
+                  class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-white rounded-full flex-shrink-0"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2.5"
+                    class="w-3 h-3"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M6 18L18 6M6 6l12 12"></path>
+                  </svg> </span
+                >No locker access
+              </p>
+
+              <button
+                a
+                href="/"
+                class="inline-flex items-center bg-purple-700 hover:bg-purple-800 border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0 font-bold"
+              >
+                Choose Plan
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full p-6 rounded-lg border-2 border-indigo-500 flex flex-col relative overflow-hidden"
+            >
+              <span
+                class="bg-indigo-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl"
+                >POPULAR</span
+              >
+              <h2
+                class="text-sm tracking-widest text-purple-700 title-font mb-1 font-medium"
+              >
+                PREMIUM
+              </h2>
+
+              <h1
+                class="text-5xl text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-800"
+              >
+                <span>$15</span>
+                <span class="text-lg ml-1 font-normal">/month</span>
+              </h1>
+
+              <p class="flex items-center text-white mb-2">
+                <span
+                  class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-white rounded-full flex-shrink-0"
+                >
+                  <svg
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2.5"
+                    class="w-3 h-3 text-white"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg> </span
+                >Access to all gym facilities
+              </p>
+
+              <p class="flex items-center text-white mb-2">
+                <span
+                  class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-white rounded-full flex-shrink-0"
+                >
+                  <svg
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2.5"
+                    class="w-3 h-3 text-white"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg> </span
+                >1 personal training session per month
+              </p>
+
+              <p class="flex items-center text-white mb-2">
+                <span
+                  class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-white rounded-full flex-shrink-0"
+                >
+                  <svg
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2.5"
+                    class="w-3 h-3 text-white"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg> </span
+                >Access to group classes
+              </p>
+              <p class="flex items-center text-white mb-2">
+                <span
+                  class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-white rounded-full flex-shrink-0"
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2.5"
+                    class="w-3 h-3"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M6 18L18 6M6 6l12 12"></path>
+                  </svg> </span
+                >No locker access
+              </p>
+
+              <button
+                a
+                href="/"
+                class="inline-flex items-center bg-purple-700 hover:bg-purple-800 border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0 font-bold"
+              >
+                Choose Plan
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden"
+            >
+              <h2
+                class="text-sm tracking-widest text-purple-700 title-font mb-1 font-medium"
+              >
+                PRO
+              </h2>
+              <h1
+                class="text-5xl text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-800"
+              >
+                <span>$25</span>
+                <span class="text-lg ml-1 font-normal">/month</span>
+              </h1>
+              <p class="flex items-center text-white mb-2">
+                <span
+                  class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-white rounded-full flex-shrink-0"
+                >
+                  <svg
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2.5"
+                    class="w-3 h-3 text-white"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg> </span
+                >Access to all gym facilities
+              </p>
+              <p class="flex items-center text-white mb-2">
+                <span
+                  class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-white rounded-full flex-shrink-0"
+                >
+                  <svg
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2.5"
+                    class="w-3 h-3 text-white"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg> </span
+                >2 personal training sessions per month
+              </p>
+              <p class="flex items-center text-white mb-2">
+                <span
+                  class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-white rounded-full flex-shrink-0"
+                >
+                  <svg
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2.5"
+                    class="w-3 h-3 text-white"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg> </span
+                >Access to group classes
+              </p>
+              <p class="flex items-center text-white mb-2">
+                <span
+                  class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-800 text-white rounded-full flex-shrink-0"
+                >
+                  <svg
+                    fill="currentColor"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2.5"
+                    class="w-3 h-3 text-white"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg> </span
+                >Locker access
+              </p>
+              <button
+                a
+                href="/"
+                class="inline-flex items-center bg-purple-700 hover:bg-purple-800 border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0 font-bold"
+              >
+                Choose Plan
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-4 h-4 ml-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+
+    <section
+      class="text-white bg-gradient-to-r from-red-500 via-pink-500 to-purple-500 body-font"
+    >
+      <div class="container px-5 mx-auto flex flex-wrap">
+        <div class="flex w-full mb-10 flex-wrap">
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font lg:w-1/3 lg:mb-0 mb-4"
+          >
+            Gallery
+          </h1>
+          <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">
+            We provide top-notch facilities to our members. From cutting-edge
+            equipment to spacious workout areas, we have everything you need for
+            a great workout experience.
+          </p>
+        </div>
+        <div class="flex flex-wrap md:-m-2 -m-1">
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full object-center block"
+                src="https://source.unsplash.com/500x300/?gym&client_id=Lhbn_UORgQ9GlN6cjj6c1VJofkJjLRmilW_NNzuh5yY"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full object-center block"
+                src="https://source.unsplash.com/501x301/?gym&client_id=Lhbn_UORgQ9GlN6cjj6c1VJofkJjLRmilW_NNzuh5yY"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-full">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block"
+                src="https://source.unsplash.com/600x360/?gym&client_id=Lhbn_UORgQ9GlN6cjj6c1VJofkJjLRmilW_NNzuh5yY"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-full">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block"
+                src="https://source.unsplash.com/601x361/?gym&client_id=Lhbn_UORgQ9GlN6cjj6c1VJofkJjLRmilW_NNzuh5yY"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full object-center block"
+                src="https://source.unsplash.com/502x302/?gym&client_id=Lhbn_UORgQ9GlN6cjj6c1VJofkJjLRmilW_NNzuh5yY"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full object-center block"
+                src="https://source.unsplash.com/503x303/?gym&client_id=Lhbn_UORgQ9GlN6cjj6c1VJofkJjLRmilW_NNzuh5yY"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="text-white bg-gradient-to-r from-red-500 via-pink-500 to-purple-500 body-font"
+    >
+      <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+        <div
+          class="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14758.201075298655!2d-87.63314127302!3d41.871507419650804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2ca005fd8e87%3A0x2440022c9be1ae59!2sBuckingham%20Fountain!5e0!3m2!1sen!2s!4v1688382651183!5m2!1sen!2s"
+            width="100%"
+            height="100%"
+            title="map"
+            class="absolute inset-0"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            scrolling="no"
+            style="filter: none"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <div
+            class="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md"
+          >
+            <div class="lg:w-1/2 px-6">
+              <h2
+                class="title-font font-semibold text-white tracking-widest text-xs"
+              >
+                ADDRESS
+              </h2>
+              <p class="mt-1">
+                301 S Columbus Dr, Chicago, IL 60605, United States
+              </p>
+            </div>
+            <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+              <h2
+                class="title-font font-semibold text-white tracking-widest text-xs"
+              >
+                EMAIL
+              </h2>
+              <a
+                class="text-indigo-400 leading-relaxed"
+                href="mailto:zaim.k.abbasi@gmail.com"
+                >zaim.k.abbasi@gmail.com</a
+              >
+              <h2
+                class="title-font font-semibold text-white tracking-widest text-xs mt-4"
+              >
+                PHONE
+              </h2>
+              <p class="leading-relaxed">123-456-7890</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+        >
+          <h2 class="text-white text-lg mb-1 font-medium title-font">
+            Feedback
+          </h2>
+          <p class="leading-relaxed mb-5">
+            Got any feedback? Let us know! We appreciate your input.
+          </p>
+          <form action="https://formspree.io/f/xbjvrewv" method="POST">
+            <div class="relative mb-4">
+              <label for="name" class="leading-7 text-sm">Name</label>
+              <input
+                type="text"
+                id="Name"
+                name="Name"
+                class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <div class="relative mb-4">
+              <label for="email" class="leading-7 text-sm">Email</label>
+              <input
+                type="email"
+                id="Email"
+                name="Email"
+                class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <div class="relative mb-4">
+              <label for="message" class="leading-7 text-sm">Message</label>
+              <textarea
+                id="Message"
+                name="Message"
+                class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              ></textarea>
+            </div>
+            <button
+              class="text-white bg-purple-700 hover:bg-purple-800 border-0 py-2 px-6 focus:outline-none rounded text-lg"
+              id="submit-btn"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+          <p class="text-xs text-opacity-90 mt-3">
+            Click the button to submit your feedback and our team will get back
+            to you shortly.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="text-white bg-gradient-to-r from-red-500 via-pink-500 to-purple-500 body-font"
+    >
+      <div
+        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <a
+          class="flex title-font font-medium items-center md:justify-start justify-center text-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+            ></path>
+          </svg>
+          <span class="ml-3 text-xl">Fitness Hub</span>
+        </a>
+        <p
+          class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4"
+        >
+          © 2023 Fitness Hub —
+          <a
+            href="https://www.linkedin.com/in/zaim-khan-59109426a"
+            class="ml-1"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Zaim Khan</a
+          >
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+        >
+          <a class="text-gray-400">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+              ></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+
+    <script>
+      // Smooth scrolling when clicking on a link with a hash
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Get the "Our Team" link element
+      const ourTeamLink = document.querySelector("#our-team-link");
+
+      // Add click event listener to the link
+      ourTeamLink.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent the default link behavior
+
+        // Get the target element to scroll to (the "Our Team" section)
+        const targetElement = document.querySelector("#our-team");
+
+        // Use the `scrollIntoView` method with options for smooth scrolling
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      });
+
+      // Get the navbar link elements
+      const contactLink = document.querySelector('a[href="#contact"]');
+
+      // Add click event listener to the Contact link
+      contactLink.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent the default link behavior
+
+        // Get the target section element
+        const contactSection = document.getElementById("contact");
+
+        // Scroll to the target section using smooth behavior
+        contactSection.scrollIntoView({ behavior: "smooth" });
+      });
+
+      function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+
+      document
+        .getElementById("fitness-hub-link")
+        .addEventListener("click", function () {
+          location.reload();
+        });
+
+      function scrollToFeedbackSection() {
+        const feedbackSection = document.getElementById("contact");
+        feedbackSection.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>
